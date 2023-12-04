@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="orooji">
+        <meta name="keywords" content="Django, HTML, Classes">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Web tutorials for HTML and CSS">
+        <meta http-equiv="refresh" content="30">
+        <title>The Way to Django</title>
+    </head>
+
+    <body style="background-color: black;">
+        <!--The Headers and Pargraphs-->
+        <h1 style="color: aliceblue;">I am a potential Developer</h1>
+        <h2 style="color: aliceblue;">I am a potential Developer</h2>
+        <h3 style="color: aliceblue;">I am a potential Developer</h3>
+        <hr>
+
+        <!--Div: THis makes a division. so whatever is in the division works as a Unit-->
+        <!--Span is for a part of pargrapgh or text that is going to be Unique-->
+
+        <div style="font-family: fantasy;">
+        <p style="color: aliceblue; background-color: rgb(107, 110, 110);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem assumenda aspernatur aut! Id omnis ea quisquam quam consequuntur inventore deserunt voluptate, similique ab at, modi, iste vel sequi optio.</p>
+        <p style="color: aliceblue;">Lorem ipsum dolor <span style="color: red;">Here Is different from the rest of the paragraph</span>sit amet consectetur, adipisicing elit. Iure quod nulla reiciendis molestias veniam voluptatibus blanditiis fugiat eaque tempora, voluptatum beatae, quasi eius dignissimos, enim pariatur eos quidem distinctio est!</p>
+        <p style="color: rgb(241, 10, 10); background-color: grey;"><b>This a <small><sub>Bold</sub></small><<big><sup>Porgrammer</sup></big></b></p>
+        <!--Hyper Link-->
+        <a href="https://www.google.com" target="blink" title="This will take yo to google!">Google</a>
+        <br>
+        <a href="page2.html" target="_self" title="The Second Page of Website">The Second Page</a>
+        <br>
+        <a href="mailto:m.orooji@nioc.ir">Email Me</a>
+        </div>
+
+        <!--The Images-->
+        <br>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank">
+        <img src="Images/Developer.jfif" height="300" alt="This is me in 6 month" title="Mostafa Django Developer">
+        </a>
+
+        <!--Audio Link-->
+        <br>
+        <audio controls src="Audios/01 Ghateye Toloo.mp3"></audio>
+
+        <!---Video-->
+        <br>
+        <video controls src="Videos/SampleVideo_640x360_30mb.mp4"></video>
+
+        <!---Lists-->
+        <ul> <p><b>How to become a Django Programmer</b></p>
+            <li>The First Base is HTML as the Structure</li>
+            <li>The Second is CSS to learn how to design</li>
+            <li>Finally I will learn Django to make more Money</li>
+        </ul>
+        <br>
+        <ol type="A"> <p><b>The Steps are</b></p>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Django</li>
+                <ol> <b>What Else You need</b>
+                    <li>Python Basics</li>
+                    <li>Python Classes</li>
+                </ol>
+        </ol>
+
+        <!---Table-->
+
+        <div style="font-family:cursive">
+        <table bgcolor="black">
+            <tr bgcolor="grey">
+                <th width="100">Sunday</th>
+                <th width="100">Monday</th>
+                <th width="100">Tuesday</th>
+                <th width="100">Wednesday</th>
+                <th width="100">Thursday</th>
+                <th width="100">Friday</th>
+                <th width="100">Saturday</th>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>Closed</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--iframe: useful for embedding from other websites-->
+    <iframe src="page2.html" style="background-color: aliceblue;", height="150", width="300">
+    </iframe>
+
+        <!--Creating Buttons-->
+        <br>
+        <a href="page2.html" type="blink"><button style="background-color: blue; color: red;">Click!</button></a>
+        <br>
+        <br>
+        <button onclick="doSomething()">Java</button>
+        <h1 id="test" style="color: red; background-color: aqua;">Hello</h1>
+        <script>
+            function doSomething(){
+                document.getElementById("test").innerHTML = "Goodbyeeeee";
+            }
+        </script>
+
+        <!--forms-->
+        <form action="action_page.php", method="POST">
+            <div style="background-color: white;">
+                <br>
+                <label for="fname">first name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+            </div>
+            
+            <br>
+            <div style="background-color: white;">
+                <label for="lname">last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+            </div>
+
+            <br>
+            <div style="background-color: white;">
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" maxlength="12" required>
+            </div>
+
+            <br>
+            <div style="background-color: white;">
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="mail" placeholder="Spant@gamil.com" required>
+            </div>
+
+            <br>
+            <div style="background-color: white;">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+989308066301" required>
+            </div>
+
+            <br>
+            <div style="background-color: white;">
+                <label for="birth">Birth date:</label>
+                <input type="date" id="birth" name="birth" required>
+            </div>
+
+            <br>
+            <div>
+                <input type="reset">
+            </div>
+
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+
+        </form>
+    </body>
+
+</html>
