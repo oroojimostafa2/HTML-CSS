@@ -1,9 +1,19 @@
 body{
+
+    /* How to add the Background Image*/
     background-image: url(/Images/background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+
+    /* How to add a gradient color to the background
+    background: linear-gradient(grey, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+
+    /*The Marging of the Body in its totality*/
+    margin: 50px;
 }
 p{
     color: rgb(251, 255, 0);
@@ -32,4 +42,50 @@ h1{
     background: linear-gradient(to bottom, grey, white);
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+#box1{
+    border: 5px solid;
+    width: 250px;
+    height:250px;
+    font-size: 22px;
+    background: linear-gradient(rgb(226, 171, 67), white);
+
+    /* The difference between the Padding and the Margin
+    If you set margin left and right to auto, then the box 
+    will be centered*/
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top:100px;
+
+    /* You could use the float to wrap the text around a box or image
+    and you could use Clear to avoid wrapping as is done for the next box */
+    float:right
+}
+
+#pfloat{
+    font-size: 50px;
+    color:rgb(248, 239, 239);
+    font-style: oblique;
+    font-weight: bold;
+    margin-top:225px;
+}
+
+#box2{
+    border-style:solid;
+    border-color:black;
+    border-width: 1mm;
+    width: 500px;
+    height:125px;
+    font-size: 22px;
+    background: linear-gradient(rgb(72, 72, 204), white);
+    padding:30px;
+    /* If you define margine by percent then it will be dynamic.
+    if you stretch the windows it will have the same percent margin*/
+    margin-left: 3%;
+    margin-right:auto;
+    margin-top: 100px;
+    clear:both
 }

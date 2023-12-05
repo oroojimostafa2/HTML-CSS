@@ -1,0 +1,78 @@
+body{
+    background-color:whitesmoke;
+    margin: 5mm;
+    font-size: 15px;
+}
+box-icon{
+    color: red;
+}
+/* Shadow: Text Shadows and Box Shadows*/
+h1{
+    font-size: 40px;
+    font-family:fantasy;
+    color: black;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px yellow, 5px -5px 5px red;
+}
+h1:hover{
+    box-shadow: 10px 5px 5px orangered,10px -5px 5px yellow;
+}
+
+/* Pseudo Classes */
+a:link{
+    color: blueviolet;
+}
+a:visited{
+    color: grey;
+}
+a:hover{
+    color: tomato;
+}
+
+a:active{
+    background-color: yellow;
+}
+
+/* This is for buttons */
+#test{
+    margin: 20px;
+}
+#test:hover{
+    background-color: green;
+}
+#test:active{
+    color:white;
+}
+
+/* This is pseudo for lists. This way you can make beutiful table */
+li:nth-child(2n+2){
+    color: blue;
+    background-color: yellow;
+}
+li:nth-child(2n+1){
+    color: rgb(0, 255, 55);
+    background-color: rgb(255, 94, 0);
+}
+
+
+
+/* Positioning based on static, relative, absolute, fixed and sticky */
+#box1{
+    border: 5px solid;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(60, 129, 89);
+    font-size: large;
+    position: relative;
+}
+
+#box2{
+    border: 5px solid;
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    font-size: large;
+    position: absolute;
+    top:100px;
+    right:100px;
+}
